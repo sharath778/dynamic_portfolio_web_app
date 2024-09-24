@@ -5,6 +5,7 @@ const id = user._id;
 const data = async ()=>{
     const data = await fetch(`http://localhost:5000/api/getData/${id}`);
     const newData= await data.json();
+    console.log(newData);
     document.querySelectorAll(".usName").forEach((e)=>e.innerHTML=newData.name);
     document.querySelector(".title").innerHTML=newData.title;
     document.querySelector(".contact").setAttribute('href',`mailto:${newData.email}`);

@@ -24,8 +24,9 @@ const Landing = () => {
             <p>Passionate developer creating elegant web solutions at beginning.</p>
             <div className="card-actions justify-end">
               
-                <a href="../../public/assets/templatesPortfolio/temp_1/index.html" target='#blank'><button className="btn btn-primary">Try Now!
-                </button></a>
+                <a href={"/assets/templatesPortfolio/temp_1/index.html"} target='#blank'>
+                <button className="btn btn-primary">Try it!</button>
+                </a>
             </div>
           </div>
         </div>

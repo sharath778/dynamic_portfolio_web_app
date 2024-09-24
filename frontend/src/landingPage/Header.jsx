@@ -15,8 +15,8 @@ function HeaderNav() {
     <div className="navbar-end">
       {authUser?
         <>{ !loading ? 
-          (<button className="btn btn-info mx-2"
-          onClick={logOut}>Logout </button>):
+          (<Link to="/"><button className="btn btn-info mx-2"
+          onClick={logOut}>Logout </button></Link>):
           (<span className='loading loading-spinner'></span>)
         }</>:
         <><Link to="/login">
