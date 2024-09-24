@@ -3,7 +3,7 @@ const user = JSON.parse(logged);
 const id = user._id;
 
 const data = async ()=>{
-    const data = await fetch(`https://your-portfolio-p15c.onrender.com/${id}`);
+    const data = await fetch(`https://your-portfolio-p15c.onrender.com/api/getData/${id}`);
     const newData= await data.json();
     console.log(newData);
     document.querySelectorAll(".usName").forEach((e)=>e.innerHTML=newData.name);
