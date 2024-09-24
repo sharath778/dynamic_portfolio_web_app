@@ -6,7 +6,7 @@ import path from "path";
 
 import dataInputRoute from "./routes/dataInput.routes.js"
 import authRoutes from "./routes/auth.routes.js";
-import connectToMongoDb from "./db/connectToMongodb.js";
+import connectToMongoDb from "./db/connectToMongoDB.js";
 
 const app = express();
 const PORT = process.env.PORT||5000;
