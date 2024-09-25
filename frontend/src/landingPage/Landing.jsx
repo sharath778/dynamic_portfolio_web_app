@@ -5,7 +5,9 @@ import previewImage from "../../public/assets/images/preview.png";
 const Landing = () => {
   const detailsPresent = localStorage.getItem("data");
   console.log(detailsPresent);
-
+  const logged = localStorage.getItem('logged-user');
+  const user = JSON.parse(logged);
+  const id = user._id;
   return (
     <div className="mt-20">
       {detailsPresent!=="true"?
@@ -24,7 +26,7 @@ const Landing = () => {
             <p>Passionate developer creating elegant web solutions at beginning.</p>
             <div className="card-actions justify-end">
               
-                <a href={"/assets/templatesPortfolio/temp_1/index.html"} target='#blank'>
+                <a href={`/assets/templatesPortfolio/temp_1/index.html?id=${id}`} target='#blank'>
                 <button className="btn btn-primary">Try it!</button>
                 </a>
             </div>

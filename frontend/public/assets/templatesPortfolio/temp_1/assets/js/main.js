@@ -1,7 +1,5 @@
-const logged = localStorage.getItem('logged-user');
-const user = JSON.parse(logged);
-const id = user._id;
-
+const params = new URLSearchParams(window.location.search);
+const id=params.get('id')
 const data = async ()=>{
     const data = await fetch(`https://your-portfolio-p15c.onrender.com/api/getData/${id}`);
     const newData= await data.json();
