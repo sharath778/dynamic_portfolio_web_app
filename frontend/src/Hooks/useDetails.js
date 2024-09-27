@@ -8,6 +8,7 @@ const useDetails = () => {
         title,
         mobileNumber,
         email,
+        address,
         github,
         linkedIn,
         summary,
@@ -21,6 +22,7 @@ const useDetails = () => {
             title,
             mobileNumber,
             email,
+            address,
             github,
             linkedIn,
             summary,
@@ -41,6 +43,7 @@ const useDetails = () => {
                     title,
                     mobileNumber,
                     email,
+                    address,
                     github,
                     linkedIn,
                     summary,
@@ -72,6 +75,7 @@ function handleInput({name,
     title,
     mobileNumber,
     email,
+    address,
     github,
     linkedIn,
     summary,
@@ -84,6 +88,7 @@ function handleInput({name,
         !title||
         !mobileNumber||
         !email||
+        !!address||
         !github||
         !linkedIn||
         !summary||

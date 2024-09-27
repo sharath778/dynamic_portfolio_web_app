@@ -93,6 +93,18 @@ const UpdateForm = () => {
                     </div>
                     <div>
                         <label className="label">
+                            <span className="text-base label-text">Address</span>
+                        </label>
+                        {popUp ? <input
+                        type="text"
+                        placeholder="Enter new data"
+                        className="input input-bordered border-emerald-50 w-full"
+                        value={data.address}
+                        onChange={(e)=>setData({...data,address:e.target.value})}/>:
+                        <div className="w-full input input-bordered flex"><span className='self-center'>{data.address}</span></div>}
+                    </div>
+                    <div>
+                        <label className="label">
                             <span className="text-base label-text">Github Link</span>
                         </label>
                         {popUp ? 

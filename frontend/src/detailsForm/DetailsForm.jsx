@@ -6,6 +6,7 @@ const DetailsForm = () => {
         title:"",
         mobileNumber:"",
         email:"",
+        address:"",
         github:"",
         linkedIn:"",
         summary:"",
@@ -52,6 +53,13 @@ const DetailsForm = () => {
                         </label>
                         <input type="email" placeholder="E-mail" className="w-full input input-bordered" 
                         value={details.email} onChange={(e)=>{setDetails({...details,email:e.target.value})}}/>
+                    </div>
+                    <div>
+                        <label className="label">
+                            <span className="text-base label-text">Address</span>
+                        </label>
+                        <input type="email" placeholder="Address" className="w-full input input-bordered" 
+                        value={details.address} onChange={(e)=>{setDetails({...details,address:e.target.value})}}/>
                     </div>
                     <div>
                         <label className="label">
