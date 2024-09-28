@@ -58,7 +58,7 @@ const DetailsForm = () => {
                         <label className="label">
                             <span className="text-base label-text">Address</span>
                         </label>
-                        <input type="email" placeholder="Address" className="w-full input input-bordered" 
+                        <input type="text" placeholder="Address" className="w-full input input-bordered" 
                         value={details.address} onChange={(e)=>{setDetails({...details,address:e.target.value})}}/>
                     </div>
                     <div>
