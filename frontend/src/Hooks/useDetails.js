@@ -88,7 +88,7 @@ function handleInput({name,
         !title||
         !mobileNumber||
         !email||
-        !!address||
+        !address||
         !github||
         !linkedIn||
         !summary||
