@@ -38,7 +38,7 @@ export const dataInput = async (req,res)=>{
         });
         await newData.save();
         res.status(201).json({newData});
-        console.log(newData);
+        // console.log(newData);
     } catch (error) {
         console.log("Error in dataInput controller", error.message);
         res.status(500).json({error:"Internal server error"});
